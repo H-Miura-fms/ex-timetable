@@ -1,0 +1,32 @@
+name: "exhibition_timetable"
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: "^3.6.0"
+description: A new Flutter project.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_hooks: "^0.20.5"
+  freezed: ^2.4.0
+  gradient_borders: ^1.0.1
+  hooks_riverpod: "^2.6.1"
+  material_symbols_icons: ^4.2801.1
+  pubspec_dependency_sorter: "^1.0.5"
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  build_runner: ^2.4.14
+  path_provider: ^2.1.5
+  riverpod_annotation: ^2.6.1
+dev_dependencies:
+  flutter_lints: "^5.0.0"
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.8.0
+  pedantic_mono: "^1.29.0"
+  riverpod_generator: ^2.6.3
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/time_table.json
+    - assets/images/
