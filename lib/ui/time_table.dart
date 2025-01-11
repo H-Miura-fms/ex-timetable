@@ -4,6 +4,7 @@ import 'package:exhibition_timetable/ui/components/contents_card.dart';
 import 'package:exhibition_timetable/ui/components/header_title.dart';
 import 'package:exhibition_timetable/ui/state/time_table_data_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class TimeTable extends StatelessWidget {
@@ -12,6 +13,11 @@ class TimeTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        textTheme: GoogleFonts.zenKakuGothicAntiqueTextTheme(
+          Theme.of(context).textTheme,
+        ),
+      ),
       home: Scaffold(
         backgroundColor: ExThemeConfig.color.backGroundColor,
         body: Stack(
