@@ -43,11 +43,11 @@ class ContentsCard extends HookConsumerWidget {
       if (sessionModel.category == SessionCategory.rest) {
         return 60.0;
       } else {
-        return 140.0;
+        return 180.0;
       }
     }
 
-    final height = lerpDouble(defaultHeight(), 270, heightAnimationValue);
+    final height = lerpDouble(defaultHeight(), 400, heightAnimationValue);
     if (isOnTime && sessionModel.category != SessionCategory.rest) {
       heightController.forward();
     } else {
@@ -109,12 +109,12 @@ class ContentsCard extends HookConsumerWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisSize: MainAxisSize.min,
-                            // spacing: 5,
+                            spacing: 5,
                             children: [
                               Text(
                                 sessionModel.title,
                                 style: TextStyle(
-                                  fontSize: 24,
+                                  fontSize: 40,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -122,14 +122,14 @@ class ContentsCard extends HookConsumerWidget {
                                 Text(
                                   sessionModel.category!.name,
                                   style: TextStyle(
-                                    fontSize: 10,
+                                    fontSize: 16,
                                   ),
                                 ),
                               if (sessionModel.project != null)
                                 Text(
                                   sessionModel.project!,
                                   style: TextStyle(
-                                    fontSize: 16,
+                                    fontSize: 20,
                                   ),
                                 ),
                               if (isOnTime && sessionModel.image != null)
@@ -149,7 +149,7 @@ class ContentsCard extends HookConsumerWidget {
                                         child: Text(
                                           sessionModel.description,
                                           style: TextStyle(
-                                            fontSize: 10,
+                                            fontSize: 16,
                                           ),
                                         ),
                                       ),
