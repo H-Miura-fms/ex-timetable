@@ -1,3 +1,6 @@
-# exhibition_timetable
+# 展示会　タイムテーブル表示用アプリ
 
-A new Flutter project.
+
+[第4回 渡邊恵太研究室 プロトタイプ展 超軽工業へインタラクションデザインを超えて](https://keita-lab.jp/exhibition2025)で用いたタイムテーブル表示用のアプリです。  
+
+HUAWEI MateViewに表示する想定で作成
